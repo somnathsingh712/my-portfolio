@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="checkbox" id="theme-toggle" style="display: none;" aria-label="Toggle dark mode">
+    <input type="checkbox" id="theme-toggle" style="display: none;">
     <header>
         <nav class="navbar">
-            <div class="logo">My Portfolio</div>
+            <div class="logo">Somnath</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <label for="theme-toggle" class="theme-label" role="button">Toggle Theme</label>
+            <label for="theme-toggle" class="theme-label">Toggle Theme</label>
         </nav>
     </header>
 
@@ -30,54 +30,54 @@
         </section>
         <section class="gallery">
             <div class="gallery-item">
-                <img src="images/project1.jpg" alt="Screenshot or preview of Project 1">
+                <img src="chatbots.png" alt="Project 1">
                 <label for="modal1" class="modal-btn">View Details</label>
             </div>
             <div class="gallery-item">
-                <img src="images/project2.jpg" alt="Screenshot or preview of Project 2">
+                <img src="rZ0NEHSSGdSWM6N2G7vQ_cloud+computing_356197761.jpeg" alt="Project 2">
                 <label for="modal2" class="modal-btn">View Details</label>
             </div>
             <div class="gallery-item">
-                <img src="images/project3.jpg" alt="Screenshot or preview of Project 3">
+                <img src="Blood-Donation-Bag-Connected-to-Heart-Shape_Stock-Illustration.jpg" alt="Project 3">
                 <label for="modal3" class="modal-btn">View Details</label>
             </div>
         </section>
     </main>
 
-    <!-- Modals -->
+    <!-- Modals (siblings to checkboxes for CSS ~ selector) -->
     <input type="checkbox" id="modal1" style="display: none;">
-    <div class="modal">
-        <label for="modal1" class="close" aria-label="Close modal">&times;</label>
+    <div class="modal modal1">
+        <label for="modal1" class="close">&times;</label>
         <div class="modal-content">
-            <h2>Project 1</h2>
-            <p>Details about Project 1. Add a full description, technologies used, and links here.</p>
+            <h2>An Hotel Chatbot</h2>
+            <p>The chatbot is designed to access information about hotels in desired location.</p>
         </div>
     </div>
 
     <input type="checkbox" id="modal2" style="display: none;">
-    <div class="modal">
-        <label for="modal2" class="close" aria-label="Close modal">&times;</label>
+    <div class="modal modal2">
+        <label for="modal2" class="close">&times;</label>
         <div class="modal-content">
-            <h2>Project 2</h2>
-            <p>Details about Project 2. Add a full description, technologies used, and links here.</p>
+            <h2>Online Exam Hosting Plateform</h2>
+            <p>The server was hosted to conduct exam of upto 500 students.</p>
         </div>
     </div>
 
     <input type="checkbox" id="modal3" style="display: none;">
-    <div class="modal">
-        <label for="modal3" class="close" aria-label="Close modal">&times;</label>
+    <div class="modal modal3">
+        <label for="modal3" class="close">&times;</label>
         <div class="modal-content">
-            <h2>Project 3</h2>
-            <p>Details about Project 3. Add a full description, technologies used, and links here.</p>
+            <h2>Blood Donation Website</h2>
+            <p>Designed to know about the donors as well as blood group and location</p>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2023 My Portfolio. All rights reserved.</p>
         <div class="social-icons">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">Twitter</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
         </div>
     </footer>
 </body>

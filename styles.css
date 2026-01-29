@@ -82,10 +82,19 @@ body {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-
+.hero-content h2{
+    color:#343a40;
+}
+.hero-content h2:hover{
+    color: var(--primary-color);
+}
 .hero-image img {
     width: 100%;
     height: auto;
+}
+.skills h2:hover{
+    color: var(--primary-color);
+  
 }
 
 .skill-cards {
@@ -104,6 +113,10 @@ body {
     position: relative;
     width: 30%;
     min-width: 250px;
+}
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
 }
 
 .badge {
@@ -155,9 +168,9 @@ body {
     background-color: rgba(0,0,0,0.5);
 }
 
-#modal1:checked ~ .modal:nth-of-type(1),
-#modal2:checked ~ .modal:nth-of-type(2),
-#modal3:checked ~ .modal:nth-of-type(3) {
+#modal1:checked ~ .modal1,
+#modal2:checked ~ .modal2,
+#modal3:checked ~ .modal3 {
     display: block;
 }
 
@@ -293,4 +306,10 @@ footer {
         font-size: 2rem;
     }
     .gallery {
-        grid-template-columns: repeat(
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.logo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
