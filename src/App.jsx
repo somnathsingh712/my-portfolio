@@ -1,0 +1,68 @@
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Skills from './components/Skills';
+import EnhancedSkills from './components/EnhancedSkills';
+import Projects from './components/Projects';
+import About from './components/About';
+import Achievements from './components/Achievements';
+import Certifications from './components/Certifications';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './index.css';
+
+export default function App() {
+  const [currentPage, setCurrentPage] = useState('home');
+  const [isDark, setIsDark] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDark(!isDark);
+    document.documentElement.classList.toggle('dark');
+  };
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'home':
+        return (
+          <>
+            <Hero />
+            <Skills />
+          </>
+        );
+      case 'about':
+        return <About />;
+      case 'skills':
+        return <EnhancedSkills />;
+      case 'projects':
+        return <Projects />;
+      case 'achievements':
+        return <Achievements />;
+      case 'certifications':
+        return <Certifications />;
+      case 'resume':
+        return <Resume />;
+      case 'contact':
+        return <Contact />;
+      default:
+        return <Hero />;
+    }
+  };
+
+  return (
+    <div className={isDark ? 'dark' : ''}>
+      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+        <Navbar 
+          currentPage={currentPage} 
+          setCurrentPage={setCurrentPage}
+          isDark={isDark}
+          toggleTheme={toggleTheme}
+        />
+        <main className="min-h-screen">
+          {renderPage()}
+        </main>
+        <Footer />
+      </div>
+    </div>
+  );
+}
