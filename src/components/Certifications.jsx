@@ -9,6 +9,7 @@ export default function Certifications() {
       date: 'Sept 2025',
       credentialId: 'NPTEL25CS147S958700781',
       skills: ['Internet of things'],
+      certificateImage: '/iot.pdf',
     },
     {
       title: 'Introduction to programming in Java',
@@ -16,6 +17,7 @@ export default function Certifications() {
       date: 'May 2025',
       credentialId: '17Bg10h8Di2D13B61BJ1',
       skills: ['JAVA'],
+      certificateImage: '/java.png',
     },
     {
       title: 'Master DSA with C++',
@@ -23,6 +25,7 @@ export default function Certifications() {
       date: 'June 2025',
       credentialId: 'UC-87654321',
       skills: ['DSA in JAVA'],
+      certificateImage: '/w3grads.jpg',
     },
    
   ];
@@ -77,7 +80,18 @@ export default function Certifications() {
                       {skill}
                     </span>
                   ))}
-                </div>                
+                </div>
+
+                <div className="mt-6">
+                  <a
+                    href={cert.certificateImage}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-colors"
+                  >
+                    View Certificate
+                  </a>
+                </div>
               </div>
             </div>
           ))}
