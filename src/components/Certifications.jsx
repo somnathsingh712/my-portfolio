@@ -20,11 +20,11 @@ export default function Certifications() {
       certificateImage: '/java.png',
     },
     {
-      title: 'Master DSA with C++',
+      title: 'Master DSA with C++/JAVA',
       issuer: 'W3 Grads',
       date: 'June 2025',
       credentialId: 'UC-87654321',
-      skills: ['DSA in JAVA'],
+      skills: ['DSA in JAVA/C++'],
       certificateImage: '/w3grads.jpg',
     },
    

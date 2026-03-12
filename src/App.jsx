@@ -10,6 +10,7 @@ import Certifications from './components/Certifications';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CustomCursor from './components/CustomCursor';
 import './index.css';
 
 export default function App() {
@@ -62,6 +63,7 @@ export default function App() {
 
   return (
     <div className={isDark ? 'dark' : ''}>
+      <CustomCursor />
       <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
         <Navbar 
           currentPage={currentPage} 

@@ -22,3 +22,35 @@
 * {
   @apply scroll-smooth;
 }
+
+.custom-cursor-enabled,
+.custom-cursor-enabled * {
+  cursor: none !important;
+}
+
+.custom-cursor-ball {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+  background: radial-gradient(circle at 30% 30%, #93c5fd, #2563eb);
+  box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.18);
+  transition: transform 120ms ease-out, opacity 150ms ease-out;
+  z-index: 9999;
+}
+
+.custom-cursor-ball.is-moving {
+  transform: translate(-50%, -50%) scale(1.45);
+}
+
+.custom-cursor-ball.is-pressed {
+  transform: translate(-50%, -50%) scale(0.82);
+}
+
+.custom-cursor-ball.is-hidden {
+  opacity: 0;
+}
