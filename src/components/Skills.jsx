@@ -58,7 +58,7 @@ export default function Skills() {
         <div className="mt-16 pt-12 border-t border-gray-200 dark:border-gray-700">
           <h3 className="text-2xl font-bold text-center mb-8">Technologies I Use</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {['React', 'JavaScript', 'HTML/CSS', 'Tailwind', 'Git', 'Node.js', 'MongoDB', 'REST APIs'].map((tech) => (
+            {['React', 'JavaScript', 'EC2', 'S3', 'Docker', 'Kubernetes', 'RDS', 'Lambda', 'CloudWatch', 'Virtual Machine' , 'IAM', 'HTML/CSS', 'Tailwind', 'Git', 'Node.js', 'MongoDB', 'REST APIs'].map((tech) => (
               <div
                 key={tech}
                 className="bg-blue-50 dark:bg-gray-700 rounded-lg p-4 text-center font-semibold text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-gray-600 transition-colors"

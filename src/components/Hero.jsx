@@ -56,18 +56,18 @@ export default function Hero() {
           <div className="grid grid-cols-3 gap-4 pt-8">
 
             <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">3+</p>
+              <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">6+</p>
               <p className="text-gray-600 dark:text-gray-400">Projects</p>
             </div>
 
             <div className="text-center">
               <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">MERN</p>
-              <p className="text-gray-600 dark:text-gray-400">Stack</p>
+              <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">Stack</p>
             </div>
 
             <div className="text-center">
               <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">AWS</p>
-              <p className="text-gray-600 dark:text-gray-400">Cloud</p>
+              <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">Cloud</p>
             </div>
 
           </div>

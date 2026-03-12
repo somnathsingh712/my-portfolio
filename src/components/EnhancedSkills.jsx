@@ -58,11 +58,23 @@ export default function EnhancedSkills() {
         { name: 'Figma', level: 85 },
         { name: 'UI Design', level: 88 },
         { name: 'UX Principles', level: 87 },
-        { name: 'Adobe XD', level: 80 },
-        { name: 'Prototyping', level: 86 },
+        { name: 'Vectorian Giotto', level: 80 },
+        { name: 'Balsamic', level: 86 },
       ],
       color: 'from-orange-400 to-orange-600',
     },
+    {
+  category: 'Cloud Computing',
+  icon: <Cpu size={32} />,
+  skills: [
+    { name: 'AWS', level: 85 },
+    { name: 'EC2', level: 82 },
+    { name: 'S3 Storage', level: 80 },
+    { name: 'Lambda', level: 75 },
+    { name: 'Cloud Deployment', level: 85 },
+  ],
+  color: 'from-cyan-400 to-cyan-600',
+},
     
   ];
 
@@ -137,21 +149,31 @@ export default function EnhancedSkills() {
 
         {/* Languages */}
         <div className="card">
-          <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Languages</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { lang: 'English', level: 'Fluent' },
-              { lang: 'Hindi', level: 'Native' },
-              { lang: 'Spanish', level: 'Intermediate' },
-              { lang: 'JavaScript', level: 'Expert' },
-            ].map((item, i) => (
-              <div key={i} className="text-center p-4 bg-blue-50 dark:bg-blue-900 rounded-lg">
-                <p className="font-bold text-gray-900 dark:text-white">{item.lang}</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300">{item.level}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+  <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center">
+    Languages
+  </h3>
+
+  <div className="flex flex-wrap justify-center items-center gap-4">
+    {[
+      { lang: 'English', level: 'Fluent' },
+      { lang: 'Hindi', level: 'Native' },
+      { lang: 'JavaScript', level: 'Expert' },
+    ].map((item, i) => (
+      <div
+        key={i}
+        className="flex flex-col items-center justify-center w-40 p-4 bg-blue-50 dark:bg-blue-900 rounded-lg text-center"
+      >
+        <p className="font-bold text-gray-900 dark:text-white">
+          {item.lang}
+        </p>
+
+        <p className="text-sm text-gray-600 dark:text-gray-300">
+          {item.level}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
       </div>
     </section>
   );

@@ -61,7 +61,7 @@ export default function App() {
         <main className="min-h-screen">
           {renderPage()}
         </main>
-        <Footer />
+        <Footer setCurrentPage={setCurrentPage} />
       </div>
     </div>
   );

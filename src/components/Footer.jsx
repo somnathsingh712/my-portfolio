@@ -1,7 +1,21 @@
 import React from 'react';
 
-export default function Footer() {
+export default function Footer({ setCurrentPage }) {
   const currentYear = new Date().getFullYear();
+
+  const quickLinks = [
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Contact', id: 'contact' },
+  ];
+
+  const connectLinks = [
+    { name: 'GitHub', href: 'https://github.com/somnathsingh712' },
+    { name: 'LinkedIn', href: 'https://in.linkedin.com/in/somnath-singh-yadav' },
+    { name: 'Twitter', href: 'https://x.com/somnathsingh712' },
+    { name: 'Instagram', href: 'https://www.instagram.com/somnathsingh_yadav/' },
+  ];
 
   return (
     <footer className="bg-gray-900 dark:bg-black text-white py-12">
@@ -19,10 +33,17 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Projects</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Contact</a></li>
+              {quickLinks.map((link) => (
+                <li key={link.id}>
+                  <button
+                    type="button"
+                    onClick={() => setCurrentPage?.(link.id)}
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    {link.name}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -41,10 +62,18 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-blue-400 transition-colors">GitHub</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Twitter</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Instagram</a></li>
+              {connectLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

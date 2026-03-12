@@ -14,7 +14,7 @@ export default function Achievements() {
       icon: <Award size={40} />,
       title: '1st Position in Analytics Quiz',
       description: 'Secured 1st position in analytics quiz competition.',
-      year: '2024',
+      year: '2025',
       color: 'from-purple-400 to-purple-600',
     },
     {
