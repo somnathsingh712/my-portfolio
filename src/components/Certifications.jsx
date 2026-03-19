@@ -65,10 +65,8 @@ export default function Certifications() {
                   <span>{cert.date}</span>
                 </div>
 
-                {/* Credential ID */}
-                <p className="text-xs text-gray-500 dark:text-gray-500 mb-4 bg-gray-100 dark:bg-gray-700 p-2 rounded font-mono">
-                  ID: {cert.credentialId}
-                </p>
+                
+                
 
                 {/* Skills */}
                 <div className="flex flex-wrap gap-2">

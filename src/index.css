@@ -23,6 +23,20 @@
   @apply scroll-smooth;
 }
 
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background-color: #f0f9ff;
+}
+
+.dark body {
+  background-color: #020617;
+}
+
 .custom-cursor-enabled,
 .custom-cursor-enabled * {
   cursor: none !important;
@@ -53,4 +67,30 @@
 
 .custom-cursor-ball.is-hidden {
   opacity: 0;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.99);
+    filter: blur(2px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.page-enter {
+  animation: pageEnter 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: top center;
+  will-change: transform, opacity, filter;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter {
+    animation: none;
+  }
 }

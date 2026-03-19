@@ -22,7 +22,6 @@ export default function EnhancedSkills() {
         { name: 'Node.js', level: 90 },
         { name: 'Express.js', level: 88 },
         { name: 'MongoDB', level: 85 },
-        { name: 'PostgreSQL', level: 82 },
         { name: 'REST APIs', level: 92 },
       ],
       color: 'from-green-400 to-green-600',
@@ -35,7 +34,7 @@ export default function EnhancedSkills() {
         { name: 'Docker', level: 80 },
         { name: 'CI/CD Pipeline', level: 85 },
         { name: 'AWS', level: 82 },
-        { name: 'Webpack/Vite', level: 88 },
+        { name: 'Vite', level: 88 },
       ],
       color: 'from-purple-400 to-purple-600',
     },
@@ -135,7 +134,7 @@ export default function EnhancedSkills() {
     </div>
 
     <div className="flex flex-col items-center">
-      <p className="text-4xl font-bold">30+</p>
+      <p className="text-4xl font-bold">20+</p>
       <p className="text-blue-100 mt-2">Skills</p>
     </div>
 

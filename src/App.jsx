@@ -64,7 +64,7 @@ export default function App() {
   return (
     <div className={isDark ? 'dark' : ''}>
       <CustomCursor />
-      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+      <div className="bg-sky-50 dark:bg-slate-950 text-gray-900 dark:text-white transition-colors duration-300">
         <Navbar 
           currentPage={currentPage} 
           setCurrentPage={setCurrentPage}
@@ -72,7 +72,9 @@ export default function App() {
           toggleTheme={toggleTheme}
         />
         <main className="min-h-screen">
-          {renderPage()}
+          <div key={currentPage} className="page-enter">
+            {renderPage()}
+          </div>
         </main>
         <Footer setCurrentPage={setCurrentPage} />
       </div>
