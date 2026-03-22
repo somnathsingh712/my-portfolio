@@ -114,6 +114,67 @@ body {
   animation: heroRoleLoop 4.2s ease-in-out 2.1s infinite;
 }
 
+@keyframes chainFlow {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0 140px;
+  }
+}
+
+@keyframes chainPulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.35);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.08);
+    box-shadow: 0 0 0 8px rgba(37, 99, 235, 0);
+  }
+}
+
+.education-chain-line {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  border-radius: 9999px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #1d4ed8 0,
+    #1d4ed8 16px,
+    #60a5fa 16px,
+    #60a5fa 32px
+  );
+  opacity: 0.85;
+}
+
+.education-chain-card {
+  position: relative;
+  padding-left: 2.25rem;
+}
+
+.education-chain-node {
+  position: absolute;
+  left: 14px;
+  top: 2rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background-color: #2563eb;
+  border: 3px solid #dbeafe;
+  transform: translate(-50%, -50%);
+}
+
+.dark .education-chain-node {
+  border-color: #1e3a8a;
+}
+
 @keyframes pageEnter {
   from {
     opacity: 0;
@@ -128,16 +189,62 @@ body {
   }
 }
 
+@keyframes sectionTextReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(2px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
 .page-enter {
   animation: pageEnter 420ms cubic-bezier(0.22, 1, 0.36, 1);
   transform-origin: top center;
   will-change: transform, opacity, filter;
 }
 
+.page-enter section :is(h2, h3, h4, p, li) {
+  opacity: 0;
+  animation: sectionTextReveal 520ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.page-enter section :is(h2, h3, h4, p, li):nth-of-type(1) {
+  animation-delay: 80ms;
+}
+
+.page-enter section :is(h2, h3, h4, p, li):nth-of-type(2) {
+  animation-delay: 140ms;
+}
+
+.page-enter section :is(h2, h3, h4, p, li):nth-of-type(3) {
+  animation-delay: 200ms;
+}
+
+.page-enter section :is(h2, h3, h4, p, li):nth-of-type(4) {
+  animation-delay: 260ms;
+}
+
+.page-enter section :is(h2, h3, h4, p, li):nth-of-type(5) {
+  animation-delay: 320ms;
+}
+
+.page-enter section :is(h2, h3, h4, p, li):nth-of-type(6) {
+  animation-delay: 380ms;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-role,
   .hero-role-primary,
   .hero-role-secondary,
+  .education-chain-line,
+  .education-chain-node,
+  .page-enter section :is(h2, h3, h4, p, li),
   .page-enter {
     animation: none;
     opacity: 1;

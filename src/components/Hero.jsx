@@ -29,7 +29,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              I am a Web Developer and Cloud Engineer who enjoys building scalable and responsive web applications using technologies like React, Node.js, and MongoDB. I am passionate about solving real-world problems with clean and efficient code, and I am always eager to learn new tools and technologies in web development and cloud computing.
+              Experienced in developing scalable, responsive web applications with React, Node.js, and MongoDB. Passionate about delivering clean, efficient solutions to real-world problems
             </p>
           </div>
 
