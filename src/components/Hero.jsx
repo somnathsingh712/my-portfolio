@@ -17,16 +17,19 @@ export default function Hero() {
         <div className="animate-fadeIn space-y-6">
 
           <div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
-                Full Stack Developer
+            <h1 className="mb-4 text-4xl md:text-6xl font-bold leading-tight">
+              <span className="hero-role-stage" aria-live="polite">
+                <span className="hero-role hero-role-primary bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                  Web Developer
+                </span>
+                <span className="hero-role hero-role-secondary bg-gradient-to-r from-cyan-600 to-sky-400 bg-clip-text text-transparent">
+                  Cloud Architect
+                </span>
               </span>
             </h1>
 
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              I build scalable and responsive web applications using modern technologies
-              like React, Node.js, and MongoDB. Passionate about solving real-world
-              problems through clean and efficient code.
+              I am a Web Developer and Cloud Engineer who enjoys building scalable and responsive web applications using technologies like React, Node.js, and MongoDB. I am passionate about solving real-world problems with clean and efficient code, and I am always eager to learn new tools and technologies in web development and cloud computing.
             </p>
           </div>
 

@@ -129,12 +129,12 @@ export default function EnhancedSkills() {
   <div className="flex flex-wrap justify-center md:justify-between items-center gap-8 text-center">
     
     <div className="flex flex-col items-center">
-      <p className="text-4xl font-bold">20+</p>
+      <p className="text-4xl font-bold">10+</p>
       <p className="text-blue-100 mt-2">Technologies</p>
     </div>
 
     <div className="flex flex-col items-center">
-      <p className="text-4xl font-bold">20+</p>
+      <p className="text-4xl font-bold">8+</p>
       <p className="text-blue-100 mt-2">Skills</p>
     </div>
 
